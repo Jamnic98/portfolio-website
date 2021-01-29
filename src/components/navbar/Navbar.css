@@ -1,0 +1,26 @@
+.nav { 
+  text-align: center;
+  z-index:100; 
+  margin: 0px;
+  font-family: Arial;
+  font-size: 100%;
+  width: 100%;
+  overflow: hidden;
+  height: 3em;
+}
+
+.sticky-nav {   
+    position: sticky;
+    top: 0px;
+    /* background-color: rgb(24; 55, 85); */
+    background-color: var(--bg-secondary);
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;  
+}
+
+.nav ul li {
+  margin-right: 1em;
+}
