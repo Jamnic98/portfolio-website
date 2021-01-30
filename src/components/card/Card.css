@@ -1,31 +1,36 @@
 .card {
-    display: inline-flex;
-    flex-direction: column;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     color: black;
-    min-width: 280px;
-    max-width: 320px;
-    width: 30vw;
-    height: 390px;
+    width: 300px;
+    height: 480px;
     border-radius: 8px;
-    margin: 5px;
-    overflow: hidden;
+    margin: 15px;
     position: relative;
     text-decoration: none;
-    /* box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 155); */
+    overflow: hidden;
+    box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.5);
 }
 
 .img-container {
-    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 35%;
-    overflow: hidden;
+    height: 300px;
+    overflow: inherit;
+    position: relative;
+}
+
+.color-overlay::before {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    content: "";
+    background-color: var(--bg-secondary);
+    opacity: 0.22;
 }
 
 .card-img {
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 300px;
     transition: transform ease .4s;
 }
 
@@ -33,22 +38,45 @@
     transform: scale(1.2);
 }
 
-.card-text-content {justify-content: space-evenly;
+.card-text-content {
+    color: var(--bg-secondary);
     padding: 5px;
-    margin: 5px 0px 20px 5px;
+    margin: 5px 0px 15px 5px;
     text-align: left;
+    overflow: hidden;
 }
 
 .card-title {
     margin: inherit;
-    font-size: 1.6em;
-    max-width: 250px;
+    font-size: 1.8em;
+    max-width: 50%;
 }
 
 .card-description {
-    font-size: 1.2em;
-    max-width: 275px;
+    font-size: 1.1em;
+    max-width: 95%;
     margin: inherit;
-    display: block;
+    text-align: left;
+    font-weight: bold;
 }
 
+.card-icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    position: absolute;
+    padding-right: 5px;
+    top: -16px;
+    left: -35px;
+    background-color: var(--bg-secondary);
+    border-bottom-right-radius: 8px;
+
+}
+
+.card-icon {
+    font-size: 2em;
+    margin: 5px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+}

@@ -5,8 +5,6 @@ import Navbar from './components/navbar/Navbar';
 
 import './App.css';
 
-// import img from './images/profile-picture.jpg';
-
 function App() {
 
     return (
