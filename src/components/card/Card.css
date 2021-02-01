@@ -1,6 +1,7 @@
 .card {
     background-color:rgb(255, 255, 255);
     color: black;
+    min-width: 280px;
     width: 300px;
     height: 480px;
     border-radius: 8px;
@@ -11,10 +12,11 @@
     box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.5);
 }
 
-.img-container {
+
+.card-img-container {
     width: 100%;
     height: 300px;
-    overflow: inherit;
+    overflow: hidden;
     position: relative;
 }
 
@@ -25,7 +27,7 @@
     position: absolute;
     content: "";
     background-color: var(--bg-secondary);
-    opacity: 0.22;
+    opacity: 0.2;
 }
 
 .card-img {
@@ -35,7 +37,7 @@
 }
 
 .card-img-zoom {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 .card-text-content {
