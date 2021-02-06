@@ -8,7 +8,7 @@ const cards = [
                 url: "/images/scrabble-tiles.png "
             }
         ],
-        technologies: ["javaScript"]
+        mainLanguage: "javaScript"
     }, {
         title: "Pyramid Solitaire",
         description: `A game based on a variation of the popular card game, solitaire.`,
@@ -18,7 +18,7 @@ const cards = [
                 url: "/images/pyramid-solitaire.png "
             }
         ],
-        technologies: ["python"]
+        mainLanguage: "python"
     }, {
         title: "Reading Log",
         description: `A list of books the user has read, stored in a MySQL database.`,
@@ -28,8 +28,8 @@ const cards = [
                 url: "/images/reading-log.jpg "
             }
         ],
-        technologies: ["java"]
-    }
+        mainLanguage: "java"
+    },
 ]
 
 export default cards;

@@ -1,5 +1,6 @@
 .nav { 
-  text-align: center;
+  background-color: var(--bg-secondary);
+  display: flex;
   z-index:100; 
   margin: 0px;
   font-family: Arial;
@@ -13,14 +14,20 @@
     position: sticky;
     top: 0px;
     /* background-color: rgb(24; 55, 85); */
-    background-color: var(--bg-secondary);
 }
 
 .nav ul {
   display: flex;
   list-style-type: none;  
+  text-decoration: none;
 }
 
 .nav ul li {
   margin-right: 1em;
+  
+}
+
+.nav ul li span {
+  color: white;
+  
 }

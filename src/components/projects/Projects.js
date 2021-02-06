@@ -1,19 +1,14 @@
-import Card from '../card/Card';
-import cards from '../card/cardData';
+import CardList from '../card/CardList';
 import './Projects.css';
 
 function Projects() {
     return (
-        <div className="card-container">
-            {cards.map((card) => {
-                return <Card
-                    title={card.title}
-                    imgUrl={card.screenshots[0].url}
-                    description={card.description}
-                    ghLink={card.ghLink}
-                    technologies={card.technologies}
-                />;
-            })}
+        <div className="container">
+            <header className="page-header fade-in-left">
+                <h1>Projects Overview</h1>
+                <p>A short paragraph about some of the projects I have completed.</p>
+            </header>
+            <CardList />
         </div>
     )
 }
