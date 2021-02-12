@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  background-color: var(--bg-secondary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+.navMenu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 15px;
+  top: 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0.2em;
+}
+
+.navLink {
+  color: white;
+  width: 100%;
+  padding: 0.2em;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  background-color: var(--color-highlight);
+  color: var(--bg-secondary);
+  transition: all 0.2s ease-out;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuIcon:hover {
+  background-color: orange;
+  color: var(--bg-secondary);
+  transition: all 0.2s ease-out;
+}
+
+.icon {
+  display: inline;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .navMenu {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 40px;
+    left: -120%;
+    transition: all 0.5s ease;
+  }
+
+  .navMenu.active {
+    background: var(--color-highlight);
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navLink {
+    color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .navLink:hover {
+    background-color: var(--bg-secondary);
+    color: white;
+  }
+
+  .menuIcon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.6rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+
+  .clicked {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+}
+

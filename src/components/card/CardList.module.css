@@ -1,0 +1,25 @@
+h1 {
+    font-size: 3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+}
+
+
+p {
+    font-size: 1.5em;
+}
+
+.list {
+    align-items: baseline;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 90vw;
+    width: 100%;
+}
+
+.list a {
+    text-decoration: none;
+}
+
