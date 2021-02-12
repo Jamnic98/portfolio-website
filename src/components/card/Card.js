@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaJava } from 'react-icons/fa';
 import { DiJavascript1, DiPython } from 'react-icons/di';
 
-import './Card.css';
+import cardStyles from './Card.module.css';
 
-function Card({ title, imgUrl, description, ghLink, mainLanguage }) {
+function Card({ title, imgUrl, description, projectURL, mainLanguage }) {
 
     const iconMap = {
-        "python": <DiPython />,
-        "javaScript": <DiJavascript1 />,
-        "java": <FaJava />,
+        'python': <DiPython />,
+        'javaScript': <DiJavascript1 />,
+        'java': <FaJava />,
     }
 
     const [isFocused, setIsFocused] = useState(false);
@@ -19,23 +20,27 @@ function Card({ title, imgUrl, description, ghLink, mainLanguage }) {
     }
 
     return (
-        <a href={ghLink} target="_blank" id="card-link" >
-            <div className={`card fade-in-up ${isFocused ? "card-focused" : ""}`}
-                onMouseOver={() => setFocus()}
-                onMouseOut={() => setFocus()}
-            >
-                <div className="card-content">
-                    <div className="card-img-container">
-                        <img className={`card-img ${isFocused ? "card-img-zoom" : ""}`} src={imgUrl} />
-                        <div className="card-icon">{iconMap[mainLanguage]}</div>
-                    </div>
-                    <div className="card-text-content">
-                        <h3 className="card-title">{title}</h3>
-                        <p className="card-description">{description}</p>
-                    </div>
+        <Link
+            to={projectURL}
+            className={`${cardStyles.card} ${cardStyles.fadeInUp} ${isFocused ? `${cardStyles.focused}` : ``}`}
+            onMouseOver={() => setFocus()}
+            onMouseOut={() => setFocus()}
+        >
+            <div className={`${cardStyles.imgContainer}`}>
+                <img className={`${cardStyles.img}`} src={imgUrl} />
+                <div className={`${cardStyles.icon}`}>
+                    {iconMap[mainLanguage]}
                 </div>
             </div>
-        </a>
+            <div className={`${cardStyles.textContainer}`}>
+                <h3 className={`${cardStyles.title}`}>
+                    {title}
+                </h3>
+                <p className={`${cardStyles.description}`}>
+                    {description}
+                </p>
+            </div>
+        </Link>
     )
 }
 

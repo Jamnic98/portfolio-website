@@ -1,25 +1,33 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
-import Projects from './components/projects/Projects';
 import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
+import ProjectShowcase from './components/projects/ProjectShowcase';
+import ProjectsOverview from './components/projects/ProjectsOverview';
+import projects from './appData';
 
-import './App.css';
+import appStyles from './App.module.css';
+
 
 function App() {
 
     return (
-        <div className="container">
-            < Router >
+        <div className={`${appStyles.app}`}>
+            <Router >
                 <Navbar />
-                <div id="main-content">
-                    <Switch>
-                        <Route exact path='/' component={Home} />
-                        <Route path='/projects' component={Projects} />
-                    </Switch>
+                <div className={`${appStyles.mainContent}`}>
+                    <Route exact path='/' component={Home} />
+                    <Route
+                        exact
+                        path='/projects'
+                        render={() => <ProjectsOverview projects={projects} />}
+                    />
+                    <Route
+                        path='/projects/:projectID'
+                        render={(props) => <ProjectShowcase {...props} />}
+                    />
                 </div>
             </Router >
-        </div >
+        </div>
     );
 }
 

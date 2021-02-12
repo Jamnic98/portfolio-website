@@ -1,18 +1,18 @@
 import Card from './Card';
-import cards from './cardData';
-import './CardList.css';
+import cardListStyles from './CardList.module.css';
 
-const CardList = () => {
+const CardList = (props) => {
     return (
-        <div className="card-list">
-            {cards.map((card) => {
+        <div className={`${cardListStyles.list}`}>
+            {props.projects.map((project, index) => {
                 return (
                     <Card
-                        title={card.title}
-                        imgUrl={card.screenshots[0].url}
-                        description={card.description}
-                        ghLink={card.ghLink}
-                        mainLanguage={card.mainLanguage}
+                        key={index}
+                        title={project.title}
+                        imgUrl={project.screenshots[0]}
+                        description={project.shortDescription}
+                        projectURL={project.url}
+                        mainLanguage={project.mainLanguage}
                     />
                 );
             })}
