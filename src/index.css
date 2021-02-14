@@ -13,10 +13,15 @@ body {
 
 
 .page-contents {
-    width: 90%;
-    max-width: 1400px; 
+    width: 92%;
+    max-width: 1500px; 
     color: var(--bg-secondary);
     font-weight: bold;
 }
 
 
+@media screen and (max-width: 400px) {
+  .page-contents {
+    width: 100%;
+  }
+}
