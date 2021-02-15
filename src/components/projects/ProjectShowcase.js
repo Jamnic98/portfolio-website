@@ -10,20 +10,19 @@ const ProjectShowcase = (props) => {
   const [projectData, setProjectData] = useState(null);
 
   useEffect(() => {
+    const getProjectData = () => {
+      return projects.filter((project) => {
+        return project.id === projectID;
+      })
+    }
     setProjectData({ ...getProjectData()[0] });
   }, [projectID])
-
-  const getProjectData = () => {
-    return projects.filter((project) => {
-      return project.id === projectID;
-    })
-  }
 
   const setProjectLink = (projectLink) => {
     if (projectLink === null) {
       return null;
     } else {
-      return (<a className={`${psStyles.link}`} href={projectLink} target='_blank'>Project Link</a>);
+      return (<a className={`${psStyles.link}`} href={projectLink} target='_blank' rel='noreferrer'>Project Link</a>);
     }
   }
 
@@ -36,9 +35,9 @@ const ProjectShowcase = (props) => {
   const setImages = (images) => {
     return images.map((img, index) => {
       return (
-        <div className={`${psStyles.imgContainer}`}>
-          {/* <div className={`${psStyles.colorOverlay}`}></div> */}
-          <img src={img} className={`${psStyles.img}`} key={index} />
+        <div key={index} className={`${psStyles.imgContainer}`}>
+          <div className={`${psStyles.colorOverlay}`}></div>
+          <img src={img} alt='' className={`${psStyles.img}`} />
         </div>
       );
     }).reverse();
@@ -60,7 +59,7 @@ const ProjectShowcase = (props) => {
             {setImages(projectData.screenshots)}
           </div>
           <div className={`${psStyles.longDescription}`}>{setLongDescription(projectData.longDescription)}</div>
-          <a className={`${psStyles.link}`} href={projectData.ghLink} target='_blank'>GitHub Link</a>
+          <a className={`${psStyles.link}`} href={projectData.ghLink} target='_blank' rel='noreferrer'>GitHub Link</a>
           <br />
           <br />
           <Link to='/projects' className={`${psStyles.link}`}>&larr; Projects Overview</Link>

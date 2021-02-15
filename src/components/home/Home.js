@@ -28,10 +28,10 @@ const Home = () => {
         </p>
         <h2>Projects <Emoji symbol='🔨💻' /></h2>
         <p className={`${homeStyles.paragraph}`}>
-          Feel free to expore some of the awesome programming projects I have completed on the <Link to='/projects' className={`${homeStyles.link}`}>projects page</Link>.
+          Feel free to explore some of the awesome programming projects I have completed on the <Link to='/projects' className={`${homeStyles.link}`}>projects page</Link>.
         </p>
       </div>
-      <img src='/images/profile-picure.jpg' className={`${homeStyles.profileImg}`} />
+      <img src='/images/profile-picture.jpg' alt='' className={`${homeStyles.profileImg}`} />
     </section>
   )
 }

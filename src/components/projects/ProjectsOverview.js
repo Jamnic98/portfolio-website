@@ -1,6 +1,6 @@
 import CardList from '../card/CardList';
-import { Link } from 'react-router-dom';
 import './ProjectsOverview.css';
+
 
 const ProjectsOverview = (props) => {
 

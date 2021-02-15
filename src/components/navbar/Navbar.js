@@ -90,6 +90,8 @@ function Navbar() {
         <li className={`${navStyles.navItem}`}>
           <a
             href='https://github.com/Jamnic98/repositories'
+            target='_blank'
+            rel='noreferrer'
             onClick={closeMobileMenu}
             className={`${navStyles.navLink}`}
           >
@@ -97,6 +99,8 @@ function Navbar() {
           </a>
           <a
             href='https://www.linkedin.com/in/jamie-stimpson-23ab11203/'
+            target='_blank'
+            rel='noreferrer'
             onClick={closeMobileMenu}
             className={`${navStyles.navLink}`}
           >
