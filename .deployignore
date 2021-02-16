@@ -3,4 +3,5 @@ src/**
 public/**
 .eslintcache
 .vscode
+.deployignore
 README.md
