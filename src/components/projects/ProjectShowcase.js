@@ -36,7 +36,6 @@ const ProjectShowcase = (props) => {
     return images.map((img, index) => {
       return (
         <div key={index} className={`${psStyles.imgContainer}`}>
-          {/* <div className={`${psStyles.colorOverlay}`}></div> */}
           <img src={img} alt='' className={`${psStyles.img}`} />
         </div>
       );
