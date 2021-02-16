@@ -2,7 +2,9 @@
     max-width: 500px;
     width: 400px;
     height: 600px;
-    transform: scale(0.9);
+    transform: scale(0.95);
+    border: 8px solid var(--border-color);
+    border-radius: 5px;
 }
 
 .homePage {
@@ -16,7 +18,7 @@
 }
 
 .link:hover {
-  color: var(--color-highlight);
+  color: orange;
 }
 
 .link:active {

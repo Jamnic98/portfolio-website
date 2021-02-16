@@ -18,7 +18,7 @@
 
     --bg-primary: #eff1e9; /* page background */
     --bg-primary: #bbd9e7; /* page background */
-    --bg-secondary: #1e379e; /* navbar and img border */
+    --bg-secondary: #080e24; /* navbar and img border */
     --text-primary: #0d163d; 
     --color-highlight: #71d8e6;
     --border-color: #0a2d52;
@@ -30,9 +30,19 @@ body {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3em;
+  margin-bottom: 0.2em;
 }
 
+h2 {
+  font-size: 2.4em;
+  margin-top: 0.8em;
+  margin-bottom: 0.1em;
+}
+
+p {
+  font-size: 1.5em;
+}
 
 .page-contents {
     width: 92%;
