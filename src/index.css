@@ -1,9 +1,18 @@
 :root {
     --bg-primary: rgb(37, 165, 177);
+    --bg-primary: rgb(205, 248, 253);
     --bg-secondary:rgb(23, 50, 77);
-    --color-highlight: orange;
+    --color-highlight: rgb(255, 208, 0);
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-primary);
+
+
+    --bg-primary: #eff1e9; /* page background */
+    --bg-primary: #d7e3e9; /* page background */
+
+    --bg-secondary: #040818; /* navbar and img border */
+    --text-primary: #040818; 
+    --color-highlight: #71d8e6;
 }
 
 body {
@@ -11,11 +20,15 @@ body {
     padding: 0px;
 }
 
+h1 {
+  font-size: 3.5em;
+}
+
 
 .page-contents {
     width: 92%;
     max-width: 1500px; 
-    color: var(--bg-secondary);
+    color: var(--text-primary);
     font-weight: bold;
 }
 

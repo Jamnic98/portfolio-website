@@ -47,7 +47,7 @@
 }
 
 .menuIcon:hover {
-  background-color: orange;
+  background-color: var(--color-highlight);
   color: var(--bg-secondary);
   transition: all 0.2s ease-out;
 }

@@ -13,11 +13,11 @@
 }
 
 .link {
-  color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .link:hover {
-  color: orange;
+  color: var(--color-highlight);
 }
 
 .link:active {

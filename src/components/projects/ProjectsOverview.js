@@ -1,5 +1,4 @@
 import CardList from '../card/CardList';
-import './ProjectsOverview.css';
 
 
 const ProjectsOverview = (props) => {

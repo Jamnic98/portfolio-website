@@ -19,7 +19,7 @@ const Home = () => {
         <p className={`${homeStyles.paragraph}`}>
           Building things, solving problems and technology have always captivated me, which is probably why I enjoy coding so much.
           I have experience with a variety of programming languages, such as Java, C, C++ and VBA but feel most confident using Python and JavaScript
-          as those are the ones I have practiced most.
+          as those are the ones I have practiced the most.
         </p>
         <p className={`${homeStyles.paragraph}`}>
           I enjoy learning new skills and am always expanding on my programming knowledge.
