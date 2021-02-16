@@ -80,7 +80,7 @@
   }
 
   .navMenu.active {
-    background: var(--color-highlight);
+    background: var(--bg-primary);
     margin-left: 0;
     padding-left: 0;
     left: 0;
