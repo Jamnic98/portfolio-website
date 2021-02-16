@@ -3,7 +3,6 @@
     width: 400px;
     height: 600px;
     transform: scale(0.9);
-    border: 15px double var(--border-color);
 }
 
 .homePage {
