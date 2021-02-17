@@ -27,8 +27,15 @@
 
 
 @media screen and (max-width: 500px) {
-    .profileImg {
-        width: 90%;
-        min-width: 200px;
-    }
+  .profileImg {
+    width: 90%;
+    height: auto;
+    border: 8px solid var(--border-color);
+    border-radius: 5px;
+}
+  .homePage {
+      float: none;
+      margin-right: 0px;
+      max-width: 950px;
+  }
 }

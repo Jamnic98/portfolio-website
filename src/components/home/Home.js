@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <section className='page-contents'>
-      <h1> Hello there! <Emoji symbol='👋' /></h1>
+      <h1>Hello there! <Emoji symbol='👋' /></h1>
       <div className={`${homeStyles.homePage}`}>
         <header>
           <p className={`${homeStyles.paragraph}`}>

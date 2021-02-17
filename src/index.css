@@ -16,8 +16,8 @@
     background-color: var(--bg-primary);
 
 
-    --bg-primary: #eff1e9; /* page background */
-    --bg-primary: #bbd9e7; /* page background */
+    --bg-primary: #f5ffff; /* page background */
+   
     --bg-secondary: #080e24; /* navbar and img border */
     --text-primary: #0d163d; 
     --color-highlight: #71d8e6;
