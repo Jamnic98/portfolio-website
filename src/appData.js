@@ -19,9 +19,9 @@ const projects = [
     id: "pyramid-solitaire",
     title: "Pyramid Solitaire",
     shortDescription: "A program based on a variation of the card game, solitaire.",
-    longDescription: [
-      `This program was written in Python using the Pygame library. It features sprite animations, programmed with
-             vetor maths, and can detect when there are no further moves playable.`
+    longDescription: [`
+      This program was written in Python using the Pygame library. It features sprite animations, programmed with
+      vector maths, and can detect when there are no further moves playable.`
     ],
     url: "/projects/pyramid-solitaire",
     ghLink: "https://github.com/Jamnic98/pyramid-solitaire/blob/main/README.md",
@@ -33,10 +33,10 @@ const projects = [
     title: "Reading Log",
     shortDescription: "A list of books the user has read, stored in a MySQL database.",
     longDescription: [`
-            This program, written in Java, interfaces with a MySQL database to store a list of books the user wants to read
-             and has already read. It also stores information about each book such as the title, author, a rating out of 10
-             and also comments about the book. The GUI was made using the JavaFX library and features a search bar to filter data.
-             `
+      This program, written in Java, interfaces with a MySQL database to store a list of books the user wants to read
+      and has already read. It also stores information about each book such as the title, author, a rating out of 10
+      and also comments about the book. The graphical user interface was made using the JavaFX library and features
+      a search bar to filter data.`
     ],
     url: "/projects/reading-log",
     ghLink: "https://github.com/Jamnic98/reading-log/blob/main/README.md",
