@@ -22,17 +22,19 @@ const Home = () => {
           experience with others such as Java, C, C++ and VBA. I have also used React, NodeJS and MySQL in some
           of the projects I have completed.
         </p>
-        <p className={`${homeStyles.paragraph}`}>
-          Due to my desire to learn new skills and ability to focus, I am able to learn new things rapidly.
+        {/*         <p className={`${homeStyles.paragraph}`}>
+
           Learning new skills and expanding on my understanding of programming is a daily practice and something I find very rewarding.
+
           Creativity comes naturally to me and I find coming up with new ideas and bringing them to life exciting.
-          I am very persistent and believe that given enough time, overcoming any obstacle is inevitable.
-          Additionally, my organisational skills are excellent and I am routinely reliable and timely.
-        </p>
+
+          My organisational skills are excellent and I am routinely reliable and timely.
+
+        </p> */}
         <p className={`${homeStyles.paragraph}`}>
-          I read frequently, which was the source of inspiration for the ‘Reading Log’ project that I worked on. Mostly I read
-          non-fiction books on skill development and autobiographies. As well as reading, I often listen to podcasts
-          about science and technology when doing chores. Cooking is a passion of mine and I prepare dinner for my family most days.
+          I read frequently, which was a source of inspiration for the ‘Reading Log’ project that I worked on. Mostly I read
+          autobiographies and non-fiction books on skill development. As well as reading, I often listen to podcasts about
+          science and technology.
         </p>
         <p className={`${homeStyles.paragraph}`}>
         </p>
