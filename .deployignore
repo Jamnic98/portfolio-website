@@ -1,7 +1,4 @@
 node_modules/**
-src/**
-public/**
 .eslintcache
 .vscode
-.deployignore
 README.md
