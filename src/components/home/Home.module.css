@@ -22,7 +22,7 @@
 }
 
 .link:active {
-  color: white;
+  color: var(--color-highlight);
 }
 
 

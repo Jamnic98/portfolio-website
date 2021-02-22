@@ -18,11 +18,12 @@ const Home = () => {
         <h2>About Jamie <Emoji symbol='👨‍💻' /></h2>
         <p className={`${homeStyles.paragraph}`}>
           Technology and solving problems have always captivated me, which is probably why I enjoy coding so much.
-          Currently, Python and JavaScript are the programming languages that I feel the most confident using but I also have
+          Currently, Python and JavaScript are the programming languages that I feel most confident using but I also have
           experience with others such as Java, C, C++ and VBA. I have also used React, NodeJS and MySQL in some
           of the projects I have completed.
         </p>
-        {/*         <p className={`${homeStyles.paragraph}`}>
+        {/*         
+        <p className={`${homeStyles.paragraph}`}>
 
           Learning new skills and expanding on my understanding of programming is a daily practice and something I find very rewarding.
 
@@ -30,7 +31,8 @@ const Home = () => {
 
           My organisational skills are excellent and I am routinely reliable and timely.
 
-        </p> */}
+        </p> 
+        */}
         <p className={`${homeStyles.paragraph}`}>
           I read frequently, which was a source of inspiration for the ‘Reading Log’ project that I worked on. Mostly I read
           autobiographies and non-fiction books on skill development. As well as reading, I often listen to podcasts about
