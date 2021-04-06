@@ -1,16 +1,16 @@
 .profileImg {
-    max-width: 500px;
-    width: 400px;
-    height: 600px;
-    transform: scale(0.95);
-    border: 8px solid var(--border-color);
-    border-radius: 5px;
+  max-width: 500px;
+  width: 400px;
+  height: 600px;
+  transform: scale(0.95);
+  border: 8px solid var(--border-color);
+  border-radius: 5px;
 }
 
 .homePage {
-    float: left;
-    margin-right: 20px;
-    max-width: 1000px;
+  float: left;
+  margin-right: 20px;
+  /* max-width: 1000px; */
 }
 
 .link {
@@ -25,6 +25,9 @@
   color: var(--color-highlight);
 }
 
+.paragraph {
+  max-width: 750px;
+}
 
 @media screen and (max-width: 500px) {
   .profileImg {
@@ -32,10 +35,10 @@
     height: auto;
     border: 8px solid var(--border-color);
     border-radius: 5px;
-}
+  }
   .homePage {
-      float: none;
-      margin-right: 0px;
-      max-width: 950px;
+    float: none;
+    margin-right: 0px;
+    /* max-width: 950px; */
   }
 }

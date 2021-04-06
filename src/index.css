@@ -1,16 +1,16 @@
 :root {
-    --bg-primary: #f5ffff; /* page background */
-    --bg-secondary: #090e22; /* navbar and img border */
-    --text-primary: #0d163d; 
-    --color-highlight: #71d8e6;
-    --border-color: #0a2d52;
-    background-color: var(--bg-primary);
-    font-family: Arial, Helvetica, sans-serif;
+  --bg-primary: #f5ffff; /* page background */
+  --bg-secondary: #090e22; /* navbar and img border */
+  --text-primary: #0d163d;
+  --color-highlight: #71d8e6;
+  --border-color: #0a2d52;
+  background-color: var(--bg-primary);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -29,12 +29,11 @@ p {
 }
 
 .page-contents {
-    width: 95%;
-    max-width: 1500px; 
-    color: var(--text-primary);
-    font-weight: 500;
+  width: 95%;
+  max-width: 1200px;
+  color: var(--text-primary);
+  font-weight: 500;
 }
-
 
 @media screen and (max-width: 400px) {
   .page-contents {
