@@ -45,16 +45,16 @@ const projects = [
   {
     id: "inventory-management-system",
     title: "Inventory Management System",
-    shortDescription: "A M.E.R.N stack app to track items around the house.",
+    shortDescription: "A M.E.R.N stack app to track inventory items.",
     longDescription: [
       `
-      This application was made with the intention of being used in a home to 
-      be accessed by clients on the home network. With the help of Material-UI, 
-      the client side of this program is fully responsive and easy to use both on 
-      desktop and mobile devices. The GUI is comprised of three main parts: the main 
-      table, the expiring soon panel and the low stock panel. The main table is where 
-      all the inventory items displayed. The main table features a search bar and also 
-      buttons to perform CRUD operations on the items.
+      This application was made with the intention of being used in a home, school
+      or office type environment to be accessed by clients on the local network. 
+      With the help of Material-UI, the client side of this program is fully responsive
+      and easy to use both on desktop and mobile devices. The GUI is comprised of three 
+      main parts: the main table, the expiring soon panel and the low stock panel. 
+      The main table is where all the inventory items displayed. The main table features
+      a search bar and also buttons to perform CRUD operations on the items.
     `,
       `
       All items have the following attributes: item name, quantity, room, location,
